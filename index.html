@@ -24,7 +24,7 @@
     header {
       background: var(--primary-color);
       color: white;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
       text-align: center;
     }
 
@@ -35,6 +35,24 @@
 
     header p {
       font-size: 1.2em;
+      margin: 0.5rem 0 1rem;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -94,19 +112,27 @@
 <body>
   <header>
     <h1>Sammy Kiritu Wangai</h1>
-    <h2>IT Specialist</h2>
-    <p>skiritu6817@gmail.com | +254 726 601 204 | <a href="https://linkedin.com/in/sammy-wangai-91482a144" target="_blank" style="color : white">LinkedIn</a></p>
+    <p>IT Specialist | skiritu6817@gmail.com | +254 726 601 204 | <a href="https://linkedin.com/in/sammy-wangai-91482a144" target="_blank">LinkedIn</a></p>
   </header>
 
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#activities">Activities</a>
+    <a href="#references">References</a>
+  </nav>
+
   <div class="container">
-    <section class="section">
+    <section class="section" id="summary">
       <h2 class="section-title">Professional Summary</h2>
       <p>Dedicated and technically skilled IT Specialist with a strong background in system and network administration, infrastructure support, and enterprise technology implementation. Adept at diagnosing and resolving complex technical issues, managing large-scale device deployments, and driving process automation. Known for excellent communication skills, a collaborative mindset, and the ability to lead and train support teams. Proven experience in both operational and strategic IT roles.</p>
     </section>
 
-    <section class="section">
+    <section class="section" id="experience">
       <h2 class="section-title">Professional Experience</h2>
-      <h3>Senior IT Operations Engineer – Wadi Degla Holdings (Aug 2024 – Present)</h3>
+      <h3>Senior IT Operations Engineer – Wadi Degla Holdings (Jan 2024 – Present)</h3>
       <ul>
         <li>Lead IT operations across multiple departments, ensuring uptime, data security, and user support across the enterprise.</li>
         <li>Supervise a small IT support team, offering mentorship and enforcing IT policies and best practices.</li>
@@ -116,7 +142,7 @@
         <li>Automate reporting workflows and streamline device provisioning to reduce operational overhead.</li>
         <li>Collaborate with leadership on technology strategies and provide reports on KPIs and infrastructure performance.</li>
       </ul>
-      <h3>Junior Service Delivery Analyst – Flamingo Horticulture (Dec 2021 – Aug 2024)</h3>
+      <h3>Junior Service Delivery Analyst – Flamingo Horticulture (Dec 2021 – Dec 2023)</h3>
       <ul>
         <li>Managed over 3000 employee biometric records and ensured seamless integration with the HR payroll system.</li>
         <li>Deployed point-to-point networks and implemented radio links to extend infrastructure across farm locations.</li>
@@ -145,7 +171,7 @@
       </ul>
     </section>
 
-    <section class="section">
+    <section class="section" id="skills">
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
         <span class="skill">Active Directory</span>
@@ -166,7 +192,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="education">
       <h2 class="section-title">Education</h2>
       <ul>
         <li><strong>Bachelors in Business Information Technology</strong> – Kirinyaga University (Sep 2017 – Dec 2021) – Second Class Upper Division</li>
@@ -174,7 +200,7 @@
       </ul>
     </section>
 
-    <section class="section">
+    <section class="section" id="activities">
       <h2 class="section-title">Key Activities & Affiliations</h2>
       <ul>
         <li>Member, Computer Society of Kirinyaga University</li>
@@ -183,7 +209,7 @@
       </ul>
     </section>
 
-    <section class="section">
+    <section class="section" id="references">
       <h2 class="section-title">References</h2>
       <ul>
         <li><strong>Joseph Kamunya</strong> – Senior Service Delivery Analyst, Flamingo Horticulture – kamunyajoe@gmail.com | +254 729 793 834</li>
