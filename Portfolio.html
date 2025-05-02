@@ -3,132 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sammy Kiritu Wangai - CV</title>
+  <title>Sammy Kiritu Wangai - Portfolio</title>
   <style>
+    :root {
+      --primary-color: #1abc9c;
+      --secondary-color: #2c3e50;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --section-bg: #ffffff;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
     }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      background-color: #fff;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 2rem 1rem;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
-    }
-    .contact {
-      font-size: 0.9em;
-      margin-bottom: 1.5rem;
-    }
+
     .section {
+      background-color: var(--section-bg);
       margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-left: 6px solid var(--primary-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
+
     .section-title {
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 0.2em;
-      margin-bottom: 1em;
+      color: var(--secondary-color);
+      font-size: 1.5em;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
-    .job-title {
-      font-weight: bold;
-    }
-    .institution {
-      font-style: italic;
-      font-size: 0.95em;
-    }
+
     .skills-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
+
     .skill {
-      background-color: #ecf0f1;
-      padding: 5px 10px;
-      border-radius: 5px;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
       font-size: 0.9em;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--secondary-color);
+      color: white;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Sammy Kiritu Wangai</h1>
-    <div class="contact">
-      Email: skiritu6817@gmail.com | Phone: +254 726 601 204 | <a href="https://linkedin.com/in/sammy-wangai-91482a144" target="_blank">LinkedIn</a>
-    </div>
+    <p>IT Specialist | skiritu6817@gmail.com | +254 726 601 204 | <a href="https://linkedin.com/in/sammy-wangai-91482a144" target="_blank">LinkedIn</a></p>
+  </header>
 
-    <div class="section">
+  <div class="container">
+    <section class="section">
       <h2 class="section-title">Professional Summary</h2>
       <p>Dedicated and technically skilled IT Specialist with a strong background in system and network administration, infrastructure support, and enterprise technology implementation. Adept at diagnosing and resolving complex technical issues, managing large-scale device deployments, and driving process automation. Known for excellent communication skills, a collaborative mindset, and the ability to lead and train support teams. Proven experience in both operational and strategic IT roles.</p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2 class="section-title">Professional Experience</h2>
+      <h3>Senior IT Operations Engineer – Wadi Degla Holdings (Jan 2024 – Present)</h3>
       <ul>
-        <li>
-          <span class="job-title">Senior IT Operations Engineer</span> – Wadi Degla Holdings (Jan 2024 – Present)
-          <ul>
-            <li>Lead IT operations across multiple departments, ensuring uptime, data security, and user support across the enterprise.</li>
-            <li>Supervise a small IT support team, offering mentorship and enforcing IT policies and best practices.</li>
-            <li>Administer and optimize Active Directory, DHCP, DNS, and network services to maintain stable and secure infrastructure.</li>
-            <li>Coordinate system deployments using Microsoft Intune, Azure AD, and Cisco Meraki to enhance access management and monitoring.</li>
-            <li>Champion preventive maintenance, asset tracking, and performance monitoring across IT assets.</li>
-            <li>Automate reporting workflows and streamline device provisioning to reduce operational overhead.</li>
-            <li>Collaborate with leadership on technology strategies and provide reports on KPIs and infrastructure performance.</li>
-          </ul>
-        </li>
-        <li>
-          <span class="job-title">Junior Service Delivery Analyst</span> – Flamingo Horticulture (Dec 2021 – Dec 2023)
-          <ul>
-            <li>Managed over 3000 employee biometric records and ensured seamless integration with the HR payroll system.</li>
-            <li>Deployed point-to-point networks and implemented radio links to extend infrastructure across farm locations.</li>
-            <li>Diagnosed and resolved network issues using the Cisco Meraki dashboard.</li>
-            <li>Oversaw installation and maintenance of IP surveillance cameras across facilities.</li>
-            <li>Provided first and second-line support to users through remote and on-site troubleshooting.</li>
-            <li>Configured and maintained biometric clocking devices and managed device records.</li>
-            <li>Administered Active Directory, including user provisioning, group policies, and access controls.</li>
-            <li>Conducted staff training on IT policies and software use.</li>
-            <li>Managed IT assets through preventive maintenance and inventory tracking.</li>
-          </ul>
-        </li>
-        <li>
-          <span class="job-title">IT Intern</span> – National Hospital Insurance Fund (Sep 2021 – Nov 2021)
-          <ul>
-            <li>Provided user support and resolved system and network issues.</li>
-            <li>Created and managed user accounts, and handled password resets.</li>
-            <li>Updated client information and assisted with biometric system setup.</li>
-            <li>Handled multimedia setup and basic hardware/software troubleshooting.</li>
-          </ul>
-        </li>
-        <li>
-          <span class="job-title">IT Support Attachee</span> – United States International University (Apr 2018 – Jun 2018)
-          <ul>
-            <li>Supported Windows, Linux, and Mac systems across academic departments.</li>
-            <li>Assisted with installations, user account setup, and hardware diagnostics.</li>
-            <li>Managed daily backup tasks and data recovery procedures.</li>
-            <li>Set up multimedia equipment for lectures and events.</li>
-            <li>Visited client sites for hardware installations and support.</li>
-          </ul>
-        </li>
+        <li>Lead IT operations across multiple departments, ensuring uptime, data security, and user support across the enterprise.</li>
+        <li>Supervise a small IT support team, offering mentorship and enforcing IT policies and best practices.</li>
+        <li>Administer and optimize Active Directory, DHCP, DNS, and network services to maintain stable and secure infrastructure.</li>
+        <li>Coordinate system deployments using Microsoft Intune, Azure AD, and Cisco Meraki to enhance access management and monitoring.</li>
+        <li>Champion preventive maintenance, asset tracking, and performance monitoring across IT assets.</li>
+        <li>Automate reporting workflows and streamline device provisioning to reduce operational overhead.</li>
+        <li>Collaborate with leadership on technology strategies and provide reports on KPIs and infrastructure performance.</li>
       </ul>
-    </div>
+      <h3>Junior Service Delivery Analyst – Flamingo Horticulture (Dec 2021 – Dec 2023)</h3>
+      <ul>
+        <li>Managed over 3000 employee biometric records and ensured seamless integration with the HR payroll system.</li>
+        <li>Deployed point-to-point networks and implemented radio links to extend infrastructure across farm locations.</li>
+        <li>Diagnosed and resolved network issues using the Cisco Meraki dashboard.</li>
+        <li>Oversaw installation and maintenance of IP surveillance cameras across facilities.</li>
+        <li>Provided first and second-line support to users through remote and on-site troubleshooting.</li>
+        <li>Configured and maintained biometric clocking devices and managed device records.</li>
+        <li>Administered Active Directory, including user provisioning, group policies, and access controls.</li>
+        <li>Conducted staff training on IT policies and software use.</li>
+        <li>Managed IT assets through preventive maintenance and inventory tracking.</li>
+      </ul>
+      <h3>IT Intern – National Hospital Insurance Fund (Sep 2021 – Nov 2021)</h3>
+      <ul>
+        <li>Provided user support and resolved system and network issues.</li>
+        <li>Created and managed user accounts, and handled password resets.</li>
+        <li>Updated client information and assisted with biometric system setup.</li>
+        <li>Handled multimedia setup and basic hardware/software troubleshooting.</li>
+      </ul>
+      <h3>IT Support Attachee – United States International University (Apr 2018 – Jun 2018)</h3>
+      <ul>
+        <li>Supported Windows, Linux, and Mac systems across academic departments.</li>
+        <li>Assisted with installations, user account setup, and hardware diagnostics.</li>
+        <li>Managed daily backup tasks and data recovery procedures.</li>
+        <li>Set up multimedia equipment for lectures and events.</li>
+        <li>Visited client sites for hardware installations and support.</li>
+      </ul>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
         <span class="skill">Active Directory</span>
@@ -147,50 +163,37 @@
         <span class="skill">Problem Solving</span>
         <span class="skill">Team Leadership</span>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2 class="section-title">Education</h2>
       <ul>
-        <li>
-          <span class="job-title">Bachelors in Business Information Technology</span> – Kirinyaga University (Sep 2017 – Dec 2021)<br />
-          Second Class Upper Division
-        </li>
-        <li>
-          <span class="job-title">KCSE</span> – Moi Forces Academy (Jan 2013 – Dec 2016)
-        </li>
+        <li><strong>Bachelors in Business Information Technology</strong> – Kirinyaga University (Sep 2017 – Dec 2021) – Second Class Upper Division</li>
+        <li><strong>KCSE</strong> – Moi Forces Academy (Jan 2013 – Dec 2016)</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2 class="section-title">Key Activities & Affiliations</h2>
       <ul>
         <li>Member, Computer Society of Kirinyaga University</li>
         <li>Secretary, Wildlife Club</li>
         <li>Volunteered to teach computer classes at Thingithu Secondary School, Nanyuki</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2 class="section-title">References</h2>
       <ul>
-        <li>
-          <strong>Joseph Kamunya</strong><br />
-          Senior Service Delivery Analyst, Flamingo Horticulture<br />
-          kamunyajoe@gmail.com | +254 729 793 834
-        </li>
-        <li>
-          <strong>Edwin Njogu</strong><br />
-          Digital Health Specialist Manager, LVCT Health<br />
-          edunjogue@gmail.com | +254 716 589 354
-        </li>
-        <li>
-          <strong>Rose Mwangi</strong><br />
-          Software Engineer, Medbook Kenya Limited<br />
-          rosemwangidev@gmail.com | +254 700 367 604
-        </li>
+        <li><strong>Joseph Kamunya</strong> – Senior Service Delivery Analyst, Flamingo Horticulture – kamunyajoe@gmail.com | +254 729 793 834</li>
+        <li><strong>Edwin Njogu</strong> – Digital Health Specialist Manager, LVCT Health – edunjogue@gmail.com | +254 716 589 354</li>
+        <li><strong>Rose Mwangi</strong> – Software Engineer, Medbook Kenya Limited – rosemwangidev@gmail.com | +254 700 367 604</li>
       </ul>
-    </div>
+    </section>
   </div>
+
+  <footer>
+    &copy; 2025 Sammy Kiritu Wangai. All rights reserved.
+  </footer>
 </body>
-</html> 
+</html>
