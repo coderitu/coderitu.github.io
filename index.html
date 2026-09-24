@@ -181,7 +181,7 @@
   .tl-item.compact p{margin:0; color:var(--slate); font-size:14px;}
 
   /* ---------- Case studies ---------- */
-  .cases{display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;}
+  .cases{display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;}
   .case{
     border:1px solid var(--line);
     background:#F5F8F6;
@@ -219,7 +219,6 @@
   .edu-item span{color:var(--slate); font-size:13.5px;}
   .activities ul{margin:0; padding-left:18px; color:var(--charcoal); font-size:14.5px;}
   .activities li{margin-bottom:8px;}
-  .activities{border: 2px dotted #3498db;}
 
   /* ---------- Footer / Contact ---------- */
   footer{
@@ -340,6 +339,22 @@
       <p class="lede">A few pieces of hands-on work that shaped how I approach infrastructure — connectivity, identity at scale, and endpoint security.</p>
     </div>
     <div class="cases">
+
+      <div class="case">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+          <rect x="3" y="14" width="8" height="6" rx="1" stroke="#0F1B2D" stroke-width="1.4"/>
+          <rect x="13" y="14" width="8" height="6" rx="1" stroke="#0F1B2D" stroke-width="1.4"/>
+          <rect x="23" y="14" width="8" height="6" rx="1" stroke="#0F1B2D" stroke-width="1.4"/>
+          <path d="M7 14 V9 H27 V14" stroke="#E2932F" stroke-width="1.4"/>
+          <circle cx="17" cy="5" r="2.4" stroke="#E2932F" stroke-width="1.4"/>
+          <path d="M17 7.4 V9" stroke="#E2932F" stroke-width="1.4"/>
+          <path d="M7 20 V25 M17 20 V25 M27 20 V25" stroke="#0F1B2D" stroke-width="1.4"/>
+        </svg>
+        <h3>Company-wide network overhaul: third-party to Cisco Meraki</h3>
+        <div class="case-row"><span class="case-label">Challenge</span><p>The organization's network ran on a mix of third-party TP-Link and D-Link switches and access points, with no centralized visibility, inconsistent performance, and rising support overhead across sites.</p></div>
+        <div class="case-row"><span class="case-label">Action</span><p>Planned and led a full migration of the company-wide network to Cisco Meraki, replacing over 21 switches and 34 access points and rebuilding network monitoring around the Meraki dashboard.</p></div>
+        <div class="case-row"><span class="case-label">Result</span><p>A single-pane-of-glass, cloud-managed network with far greater visibility, consistency, and reliability across the entire organization.</p></div>
+      </div>
 
       <div class="case">
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
@@ -486,9 +501,9 @@
       <div class="activities">
         <ul>
           <li>Volunteer IT Administrator, Amplify Hope Africa — website and email systems for the NGO.</li>
-          <li>Github copilot certificate and currently working towards Microsoft AZ-104</li>
-          <li>Volunteer computer instructor, Thingithu Secondary School, Nanyuki.</li>
+          <li>Member, Computer Society of Kirinyaga University.</li>
           <li>Chairman, Wildlife Club, Kirinyaga University.</li>
+          <li>Volunteer computer instructor, Thingithu Secondary School, Nanyuki.</li>
         </ul>
       </div>
     </div>
